@@ -1,0 +1,30 @@
+matlab
+data/demosaicking
+data/deblurring_grey
+data/bsds_500
+
+### MAC ###
+.DS_Store
+
+### python ###
+.venv
+*.pyc
+__pycache__
+.ipynb_checkpoints
+.python-version
+
+### vim ###
+*.swp
+
+### latex ###
+*.aux
+*.blg
+*.brf
+*.fdb_latexmk
+*.gz
+*.log
+*.fls
+*.pdf
+*.bbl
+*.zip
+*.synctex.gz
