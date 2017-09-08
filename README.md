@@ -42,7 +42,7 @@ The `grid_search.param_dicts_file_path` configuration parameter can be used to c
 Training a _DNCNN_
 -------------------
 
-The training of the denoising convolutional neural network we applied as a learned denoising prior was implemented with TensorFlow. With the help of command line `tf.app.flags` we provide full control over the training procedure. The single channel model provided with this repository was trained by executing:
+The training of the denoising convolutional neural network which we applied as a learned denoising prior was implemented with TensorFlow. With the help of command line `tf.app.flags` we provide full control over the training procedure. The single channel model provided with this repository was trained by executing:
 
 `python src/tf_solver.py --sigma_noise 0.02 --batch_size 128 --network DNCNN --channels 1 --pipeline bsds500 --device_name /gpu:0 --train_epochs 100`
 
