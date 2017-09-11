@@ -1,6 +1,6 @@
 Learning Proximal Operators
 ================
-This repository provides the implementation of our paper **Learning Proximal Operators: Using Denoising Networks for Regularizing Inverse Imaging Problems** Tim Meinhardt, Michael Möller, Caner Hazirbas, Daniel Cremers, ICCV 2017 [https://arxiv.org/abs/1704.03488]. All results presented in our work were produced with this code.
+This repository provides the implementation of our paper **Learning Proximal Operators: Using Denoising Networks for Regularizing Inverse Imaging Problems** (Tim Meinhardt, Michael Möller, Caner Hazirbas, Daniel Cremers, ICCV 2017) [https://arxiv.org/abs/1704.03488]. All results presented in our work were produced with this code.
 
 Additionally we provide a TensorFlow implementation of the denoising convolutional neural network (_DNCNN_) introduced in **Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising** [https://arxiv.org/abs/1608.03981].
 
@@ -20,12 +20,14 @@ Installation
 Run an Experiment 
 -------------------
 The evaluation of our method included two exemplary linear inverse problems, namely Bayer color demosaicking and grayscale deblurring. In order to configure, organize, log and reproduce our computational experiments we structured the problems with the [Sacred](http://sacred.readthedocs.io/en/latest/index.html) framework.
-For a detailed explanation on a typical Sacred interface please read its documentation. The same _ingredients_ are injected into each of our experiments which both consist of multiple _commands_. If everything is setup correctly the `print_config` command prints the current
-configuration scope by executing:
+
+For a detailed explanation on a typical Sacred interface please read its documentation. We implemented two Sacred _ingredients_ (`elemental_ingredient, grid_ingredient`) which are both injected into our experiments. The experiments each consist of multiple command line executable Sacred _commands_.
+
+If everything is setup correctly the `print_config` command for example prints the current configuration scope by executing:
 
 `python src/experiment_deblurring.py print_config`
 
-A typical run with a preset configuration scope for optimal _DNCNN_ parameters is executed with:
+A typical run with a preset configuration scope for optimal _DNCNN_ parameters is executed with (`automain` command):
 
 `python src/experiment_deblurring.py with experiment_name=experiment_a image_name=barbara elemental.optimal_DNCNN_experiment_a`
 
