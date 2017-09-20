@@ -8,8 +8,8 @@ Installation
 -------------------
 1. Install the following packages for Python 3.6:
     1. `pip3 install -r requirements.txt`
-    2. Install your version of PyTorch (http://pytorch.org/) for Python 3.6 (CUDA is optional)
-    3. `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
+    2. `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
+    3. `pip3 install git+https://github.com/timmeinhardt/pybm3d_gpu` 
     4. `pip3 install git+https://github.com/timmeinhardt/ProxImaL@learn_prox_ops`
 2. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
 3. Download pretrained _DNCNN_ models with `data/download_tf_models.sh`
