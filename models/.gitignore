@@ -1,6 +1,6 @@
-# Ignore everything
-*
+# Ignore everything:
+/*
 
-# But not these files...
-!.gitignore
-!download_models.sh
+# Except:
+!*.gitignore
+!DNCNN__gaussian_0.02__40-40-*__128

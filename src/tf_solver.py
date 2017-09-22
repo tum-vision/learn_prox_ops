@@ -16,8 +16,8 @@ import tensorflow as tf
 tf.logging.set_verbosity(tf.logging.DEBUG)
 
 FLAGS = tf.app.flags.FLAGS
-tf.app.flags.DEFINE_string('data_dir', 'data/tf_models',
-                           """Base directory where to write event logs. Default: 'data/tf_models'.""")
+tf.app.flags.DEFINE_string('data_dir', 'models',
+                           """Base directory where to write event logs. Default: 'models'.""")
 tf.app.flags.DEFINE_string('device_name', '/cpu:0',
                            """Name of GPU to run model on. Default: '/cpu:0'.""")
 tf.app.flags.DEFINE_integer('batch_size', 100,

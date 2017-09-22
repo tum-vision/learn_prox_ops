@@ -103,7 +103,7 @@ def optimal_DNCNN_experiment_a():
     """
     # pylint:disable=unused-variable
     denoising_prior = 'CNN'
-    cnn_model_path = 'data/tf_models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
+    cnn_model_path = 'models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
     sigma = 1.0
     alpha_data = 2.0
     alpha_tv = 0.0
@@ -116,7 +116,7 @@ def optimal_DNCNN_experiment_b():
     """
     # pylint:disable=unused-variable
     denoising_prior = 'CNN'
-    cnn_model_path = 'data/tf_models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
+    cnn_model_path = 'models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
     sigma = 1.0
     alpha_data = 75.0
     alpha_tv = 0.0
@@ -129,7 +129,7 @@ def optimal_DNCNN_experiment_c():
     """
     # pylint:disable=unused-variable
     denoising_prior = 'CNN'
-    cnn_model_path = 'data/tf_models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
+    cnn_model_path = 'models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
     sigma = 1.0
     alpha_data = 4.0
     alpha_tv = 0.0
@@ -142,7 +142,7 @@ def optimal_DNCNN_experiment_d():
     """
     # pylint:disable=unused-variable
     denoising_prior = 'CNN'
-    cnn_model_path = 'data/tf_models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
+    cnn_model_path = 'models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
     sigma = 1.0
     alpha_data = 73.0
     alpha_tv = 0.0
@@ -155,7 +155,7 @@ def optimal_DNCNN_experiment_e():
     """
     # pylint:disable=unused-variable
     denoising_prior = 'CNN'
-    cnn_model_path = 'data/tf_models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
+    cnn_model_path = 'models/DNCNN__gaussian_0.02__40-40-1__128/model.ckpt'
     sigma = 1.0
     alpha_data = 23.0
     alpha_tv = 0.0

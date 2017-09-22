@@ -19,10 +19,9 @@ Installation
         1. `pip3 install opencv-python==3.3.0.10`
         2. or for faster _NLM_ denoising compile OpenCV 3.3.0 manually with CUDA support and Python 3.6 bindings
 2. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
-3. Download pretrained _DNCNN_ models with `data/download_tf_models.sh`
+3. Download pretrained _DNCNN_ models with `models/download_models.sh`
 4. (**Optional**, for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
 5. (**Optional**, for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
-6. (**Optional**, for training a _DNCNN_) Download BSDS500 training data with `data/download_cnn_training_datasets.sh`.
 
 Run an Experiment
 -------------------

@@ -57,7 +57,7 @@ def optimal_DNCNN():
     """
     # pylint:disable=unused-variable
     denoising_prior = 'CNN'
-    cnn_model_path = 'data/tf_models/DNCNN__gaussian_0.02__40-40-3__128/model.ckpt'
+    cnn_model_path = 'models/DNCNN__gaussian_0.02__40-40-3__128/model.ckpt'
 
     sigma = 1.0
 

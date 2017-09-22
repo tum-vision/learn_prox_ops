@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $BASEDIR
+REL_SCRIPT_DIR=$(dirname "$0")
+INITIAL_DIR=$(pwd)
+cd $REL_SCRIPT_DIR
 
 #
 # deblurring grey
@@ -32,3 +33,5 @@ rm McM.zip
 mkdir demosaicking/kodak
 cd demosaicking/kodak
 wget -r -np -nH --cut-dirs=3 -R index.html http://www.natrox.org/img/ref/kodak/
+
+cd $INITIAL_DIR

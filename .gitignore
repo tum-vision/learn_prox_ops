@@ -1,7 +1,6 @@
 matlab
 data/demosaicking
 data/deblurring_grey
-data/bsds_500
 
 ### MAC ###
 .DS_Store
