@@ -59,7 +59,7 @@ seaborn==0.7.1
 simplegeneric==0.8.1
 six==1.10.0
 tabulate==0.7.7
-tensorflow==0.12.0rc0
+tensorflow-gpu==1.1.0
 terminado==0.6
 toolz==0.8.1
 tornado==4.4.2
