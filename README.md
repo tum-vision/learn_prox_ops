@@ -12,13 +12,17 @@ Installation
     3. PyBM3D:
         1. with CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d_gpu`
         2. or without CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
-
-2. Install OpenCV 3.3.0 with Python 3.6 bindings. (**Optional**, with CUDA support for faster _NLM_ denoising)
+    3. TensorFlow:
+        1. with CUDA: `pip3 install tensorflow-gpu==1.3.0`
+        2. or without CUDA: `pip3 install tensorflow==1.3.0`
+    4. OpenCV:
+        1. `pip3 install opencv-python==3.3.0.10`
+        2. or for faster _NLM_ denoising compile OpenCV 3.3.0 manually with CUDA support and Python 3.6 bindings
 2. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
 3. Download pretrained _DNCNN_ models with `data/download_tf_models.sh`
-4. (**Optional**, but required for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
-5. (**Optional**, but required for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
-6. (**Optional**, but required for training a _DNCNN_) Download BSDS500 training data with `data/download_cnn_training_datasets.sh`.
+4. (**Optional**, for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
+5. (**Optional**, for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
+6. (**Optional**, for training a _DNCNN_) Download BSDS500 training data with `data/download_cnn_training_datasets.sh`.
 
 Run an Experiment
 -------------------
