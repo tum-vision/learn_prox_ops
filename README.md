@@ -8,19 +8,19 @@ Installation
 -------------------
 1. Install the following packages for Python 3.6:
     1. `pip3 install -r requirements.txt`
-    2. ProxImaL: `pip3 install git+https://github.com/timmeinhardt/ProxImaL@learn_prox_ops` 
+    2. ProxImaL: `pip3 install git+https://github.com/timmeinhardt/ProxImaL@learn_prox_ops`
     3. PyBM3D:
         1. with CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d_gpu`
-        2. or without CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`.
+        2. or without CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
 
 2. Install OpenCV 3.3.0 with Python 3.6 bindings. (**Optional**, with CUDA support for faster _NLM_ denoising)
 2. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
 3. Download pretrained _DNCNN_ models with `data/download_tf_models.sh`
-4. (**Optional**, but required for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable. 
+4. (**Optional**, but required for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
 5. (**Optional**, but required for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
 6. (**Optional**, but required for training a _DNCNN_) Download BSDS500 training data with `data/download_cnn_training_datasets.sh`.
 
-Run an Experiment 
+Run an Experiment
 -------------------
 The evaluation of our method included two exemplary linear inverse problems, namely Bayer color demosaicking and grayscale deblurring. In order to configure, organize, log and reproduce our computational experiments we structured the problems with the [Sacred](http://sacred.readthedocs.io/en/latest/index.html) framework.
 
