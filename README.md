@@ -8,9 +8,10 @@ Installation
 -------------------
 1. Install the following packages for Python 3.6:
     1. `pip3 install -r requirements.txt`
-    2. `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
-    3. `pip3 install git+https://github.com/timmeinhardt/pybm3d_gpu` 
-    4. `pip3 install git+https://github.com/timmeinhardt/ProxImaL@learn_prox_ops`
+    2. ProxImaL: `pip3 install git+https://github.com/timmeinhardt/ProxImaL@learn_prox_ops` 
+    3. PyBM3D with CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d_gpu` or without `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`.
+
+2. Install OpenCV 3.3.0 with Python 3.6 bindings. ( **Optional**, with CUDA support for faster _NLM_ denoising.)
 2. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
 3. Download pretrained _DNCNN_ models with `data/download_tf_models.sh`
 4. (**Optional**, but required for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable. 
@@ -21,7 +22,7 @@ Run an Experiment
 -------------------
 The evaluation of our method included two exemplary linear inverse problems, namely Bayer color demosaicking and grayscale deblurring. In order to configure, organize, log and reproduce our computational experiments we structured the problems with the [Sacred](http://sacred.readthedocs.io/en/latest/index.html) framework.
 
-For a detailed explanation on a typical Sacred interface please read its documentation. We implemented two Sacred _ingredients_ (`elemental_ingredient, grid_ingredient`) which are both injected into our experiments. The experiments each consist of multiple command line executable Sacred _commands_.
+For a detailed explanation on a typical Sacred interface please read its documentation. We implemented two Sacred _ingredients_ (`elemental_ingredient, grid_ingredient`) which are both injected into our experiments. Among other things each of the experiments consists of multiple command line executable Sacred _commands_.
 
 If everything is setup correctly the `print_config` command for example prints the current configuration scope by executing:
 
