@@ -6,21 +6,23 @@ Additionally we provide a TensorFlow implementation of the denoising convolution
 
 Installation
 -------------------
-1. Install the following packages for Python 3.6:
+1. Install [git-lfs](https://github.com/git-lfs/git-lfs) for pulling the model and data files with the repository
+2. `git clone git@github.com:tum-vision/learn_prox_ops.git`
+3. Install the following packages for Python 3.6:
     1. `pip3 install -r requirements.txt`
     2. ProxImaL: `pip3 install git+https://github.com/timmeinhardt/ProxImaL@learn_prox_ops`
     3. PyBM3D:
         1. with CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d_gpu`
-        2. or without CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
+        2. without CUDA: `pip3 install git+https://github.com/timmeinhardt/pybm3d@learn_prox_ops`
     3. TensorFlow:
         1. with CUDA: `pip3 install tensorflow-gpu==1.3.0`
-        2. or without CUDA: `pip3 install tensorflow==1.3.0`
+        2. without CUDA: `pip3 install tensorflow==1.3.0`
     4. OpenCV:
         1. `pip3 install opencv-python==3.3.0.10`
         2. or for faster _NLM_ denoising compile OpenCV 3.3.0 manually with CUDA support and Python 3.6 bindings
-2. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
-3. (**Optional**, for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
-4. (**Optional**, for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
+4. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
+5. (**Optional**, for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
+6. (**Optional**, for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
 
 Run an Experiment
 -------------------
