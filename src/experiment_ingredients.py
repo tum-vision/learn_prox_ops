@@ -396,7 +396,7 @@ def grid_search_wrapper(experiment_wrapper, experiment_wrapper_args, cnn_func,
                               grid_params=grid_params,
                               elemental=elemental)
     with open(param_dicts_save_path, 'a+b') as f:
-        pickle.dump(dict(params, **{'psnr': psnr}), f)
+        pickle.dump(dict(grid_params, **{'psnr': psnr}), f)
     return psnr
 
 
