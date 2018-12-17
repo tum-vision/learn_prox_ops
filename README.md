@@ -22,7 +22,7 @@ Installation
         2. or for faster _NLM_ denoising compile OpenCV 3.3.0 manually with CUDA support and Python 3.6 bindings
 4. Download the demosaicking (_McMaster_ and _Kodak_) and the greyscale deblurring datasets with `data/download_datasets.sh`.
 5. (**Optional**, for faster computation and training _DNCNN_ models) Install CUDA and set the CUDA_HOME environment variable.
-6. (**Optional**, for optimal results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
+6. (**Optional**, for reproducing paper results and faster computation) Install [Halide](http://halide-lang.org/) and set the HALIDE_PATH environment variable.
 
 Run an Experiment
 -------------------
