@@ -61,17 +61,16 @@ Publication
 If you use this software in your research, please cite our publication:
 
 ```
-@article{DBLP:journals/corr/Meinhardt0HC17,
-    author    = {Tim Meinhardt and
-                 Michael Moeller and
-                 Caner Hazirbas and
-                 Daniel Cremers},
-    title     = {Learning Proximal Operators: Using Denoising Networks for Regularizing Inverse Imaging Problems},
-    journal   = {CoRR},
-    volume    = {abs/1704.03488},
-    year      = {2017},
-    url       = {http://arxiv.org/abs/1704.03488},
-    timestamp = {Wed, 07 Jun 2017 14:40:59 +0200},
-    biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/Meinhardt0HC17},
-    bibsource = {dblp computer science bibliography, http://dblp.org}}
+@INPROCEEDINGS{8237460,
+    author={T. {Meinhardt} and M. {Moeller} and C. {Hazirbas} and D. {Cremers}},
+    booktitle={2017 IEEE International Conference on Computer Vision (ICCV)},
+    title={Learning Proximal Operators: Using Denoising Networks for Regularizing Inverse Imaging Problems},
+    year={2017},
+    volume={},
+    number={},
+    pages={1799-1808},
+    keywords={deconvolution;image denoising;image restoration;image segmentation;inverse problems;learning (artificial intelligence);minimisation;inverse imaging problems;linear inverse problems;deep neural networks;convolutional;convex energy minimization algorithms;fixed denoising neural network;image deconvolution;image demosaicking;deep learning;data fidelity;blur kernels;Noise reduction;Mathematical model;Neural networks;Hafnium;Gold;Training;Algorithm design and analysis},
+    doi={10.1109/ICCV.2017.198},
+    ISSN={},
+    month={Oct},}
 ```
